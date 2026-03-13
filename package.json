@@ -1,16 +1,27 @@
 {
   "name": "pdf-agent-mcp",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "bin": {
+    "pdf-agent-mcp": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanhua1/pdf-agent-mcp.git"
+  },
+  "homepage": "https://github.com/sanhua1/pdf-agent-mcp",
+  "engines": {
+    "node": ">=22"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsup",
+    "prepare": "npm run build",
     "test": "vitest run --passWithNoTests",
     "lint": "tsc --noEmit"
   },

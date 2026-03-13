@@ -38,10 +38,16 @@
 npm install
 ```
 
-开发启动（stdio MCP）：
+本地开发启动（stdio MCP）：
 
 ```bash
 npm run dev
+```
+
+直接用 GitHub 仓库通过 `npx` 启动（推荐配置到 MCP 客户端）：
+
+```bash
+npx -y github:sanhua1/pdf-agent-mcp
 ```
 
 构建：
@@ -69,6 +75,15 @@ npm test
 - `examples/claude-config.json`
 - `examples/codex-config.md`
 - `examples/sample-prompts.md`
+
+最小 Codex/Claude 配置核心参数：
+
+```json
+{
+  "command": "npx",
+  "args": ["-y", "github:sanhua1/pdf-agent-mcp"]
+}
+```
 
 ### 已知限制
 
@@ -108,6 +123,12 @@ It is a capability layer, not a one-shot PDF-to-Markdown black box.
 ```bash
 npm install
 npm run dev
+```
+
+Run directly from GitHub via `npx` (recommended for MCP client config):
+
+```bash
+npx -y github:sanhua1/pdf-agent-mcp
 ```
 
 Useful commands:
