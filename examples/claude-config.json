@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pdf-agent-mcp": {
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "cwd": "/path/to/pdf-agent-mcp"
+    }
+  }
+}
